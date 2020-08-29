@@ -53,7 +53,7 @@ public class IndexController {
     Long oib = null;
     int uslugaId = 4;
 
-    @RequestMapping(value = {"/home"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/","/home"}, method = RequestMethod.GET)
     public String homePage(Model model) throws Exception {
 
         List<KljucnaRijec> kljucneRijeci = restService.getKljucneRijeci().getListaKljucnihRijeci();
